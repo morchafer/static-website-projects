@@ -1,0 +1,67 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.destacada {
+  margin: 3rem 0;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 50%,
+      v.$primario 50%,
+      v.$primario 100%
+    ),
+    url(../img/destacada.jpg);
+  background-repeat: no-repeat;
+  background-position: center, 75% -25rem;
+  background-size: 165rem;
+  @include m.tablet {
+    margin: 8rem 0;
+    background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 50%,
+        v.$primario 50%,
+        v.$primario 100%
+      ),
+      url(../img/destacada.jpg);
+    background-size: cover;
+    background-position: center, -40rem;
+  }
+  @include m.desktopXL {
+    background-position: center, -55rem;
+  }
+  &__grid {
+    @include m.grid(1, 2rem);
+    grid-template-rows: repeat(2, 1fr);
+    @include m.tablet {
+      @include m.grid(2, 2rem);
+      grid-template-rows: unset;
+    }
+  }
+  &__box {
+    grid-row: 2 / 3;
+    padding: 5rem;
+    @include m.tablet {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      padding: 15rem 5rem;
+    }
+  }
+  &__heading {
+    color: v.$blanco;
+    text-transform: uppercase;
+  }
+  &__texto {
+    color: v.$blanco;
+    font-size: 1.8rem;
+  }
+  &__precio {
+    color: v.$blanco;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  &__boton {
+    @include m.boton(v.$blanco, v.$primario);
+    margin: 0;
+  }
+}

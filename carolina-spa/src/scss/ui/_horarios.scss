@@ -1,0 +1,92 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.horarios {
+  margin: 3rem 0 5rem;
+  background-image: linear-gradient(
+      to top,
+      transparent 0%,
+      transparent 33.3%,
+      v.$primario 33.3%,
+      v.$primario 100%
+    ),
+    url(../img/bg_horarios.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, auto 35%;
+  background-position: center, 75% bottom;
+  @include m.tablet {
+    background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 50%,
+        v.$primario 50%,
+        v.$primario 100%
+      ),
+      url(../img/bg_horarios.jpg);
+    background-size: cover, cover;
+    background-position: center, 100% bottom;
+  }
+  @include m.desktop {
+    background-position: center, 130% bottom;
+  }
+  @include m.desktopXL {
+    background-position: center, 170% bottom;
+  }
+  &__grid {
+    @include m.grid(1, 2rem);
+    grid-template-rows: 2fr 1fr;
+    @include m.tablet {
+      @include m.grid(2, 4rem);
+      grid-template-rows: unset;
+    }
+    @include m.desktop {
+      gap: 6rem;
+    }
+    @include m.desktopXL {
+      gap: 15rem;
+    }
+  }
+  &__contenido {
+    padding: 6rem 0;
+    @include m.tablet {
+      grid-column: 2 / 3;
+    }
+  }
+  &__caption {
+    color: v.$blanco;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  &__texto {
+    color: v.$blanco;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 2.2rem;
+  }
+}
+
+.tabla-horarios {
+  border-collapse: collapse;
+  border: 0.5rem solid v.$secundario;
+  color: v.$blanco;
+  width: 100%;
+  text-align: center;
+  &__thead {
+    background-color: v.$secundario;
+  }
+  &__th {
+    padding: 2rem;
+  }
+  &__tbody {
+    font-size: 2.2rem;
+  }
+  &__tr {
+    &:hover {
+      background-color: darken(v.$primario, 10%);
+    }
+  }
+  &__td {
+    padding: 1rem 2rem;
+  }
+}

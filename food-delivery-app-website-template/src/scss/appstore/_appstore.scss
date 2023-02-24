@@ -1,0 +1,69 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.appstore {
+  background-color: v.$grisClaro;
+  padding: v.$separacion 0;
+  &__contenido {
+    overflow: hidden;
+    @include m.tablet {
+      padding-right: 5rem;
+    }
+  }
+  &__heading {
+    color: v.$secundario;
+    text-align: center;
+  }
+  &__imagen {
+    width: 50%;
+    height: auto;
+    margin: 5rem auto;
+    transition: transform 0.3s;
+    &:hover {
+      transform: rotate(6deg) scale(1.2);
+    }
+    @include m.telefono {
+      width: 40%;
+    }
+    @include m.tablet {
+      width: 60%;
+    }
+  }
+  &__texto {
+    margin: 4rem 0;
+    text-align: center;
+  }
+  &__tiendas {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    @include m.desktop {
+      gap: 4rem;
+    }
+  }
+  &__enlace {
+    width: 12rem;
+    @include m.telefono {
+      width: 17rem;
+    }
+    @include m.desktop {
+      width: 100%;
+    }
+  }
+  &__tienda {
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__grid {
+    margin-bottom: 2rem;
+    @include m.tablet {
+      @include m.grid(2, v.$separacion);
+      align-items: center;
+    }
+    @include m.desktop {
+      margin-bottom: 4rem;
+    }
+  }
+}

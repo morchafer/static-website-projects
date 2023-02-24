@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuitarLA - Modelo VAI</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__contenedor">
+        <div class="header__top pb-5">
+          <a href="index.html">
+            <img class="header__logo" src="img/logo.svg" alt="Logo" />
+          </a>
+          <nav class="nav">
+            <a class="nav__link" href="index.html">Inicio</a>
+            <a class="nav__link" href="nosotros.html">Nosotros</a>
+            <a class="nav__link" href="blog.html">Blog</a>
+            <a class="nav__link" href="tienda.html">Tienda</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="producto producto__contenedor producto__contenedor--maxw">
+      <img class="producto__imagen" src="img/guitarra_04.jpg" alt="Guitarra" />
+      <div class="producto__info producto__info--padd">
+        <h3 class="producto__nombre">Vai</h3>
+        <p class="producto__texto">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+          officiis molestiae vel consequuntur
+        </p>
+        <p class="producto__precio">$299</p>
+        <label class="producto__label">Cantidad:</label>
+        <select class="producto__select">
+          <option value="sel" class="producto__option">-- Seleccione --</option>
+          <option value="1" class="producto__option">1</option>
+          <option value="2" class="producto__option">2</option>
+          <option value="3" class="producto__option">3</option>
+          <option value="4" class="producto__option">4</option>
+          <option value="5" class="producto__option">5</option>
+          <option value="6" class="producto__option">6</option>
+          <option value="7" class="producto__option">7</option>
+          <option value="8" class="producto__option">8</option>
+          <option value="9" class="producto__option">9</option>
+          <option value="10" class="producto__option">10</option>
+        </select>
+        <a
+          href="producto.html"
+          class="producto__enlace producto__enlace--carrito"
+          >Agregar al carrito</a
+        >
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contenedor">
+        <nav class="nav-footer">
+          <a class="nav-footer__link" href="index.html">Inicio</a>
+          <a class="nav-footer__link" href="nosotros.html">Nosotros</a>
+          <a class="nav-footer__link" href="blog.html">Blog</a>
+          <a class="nav-footer__link" href="tienda.html">Tienda</a>
+        </nav>
+        <p class="footer__copyright">
+          Todos los derechos reservados. GuitarLA &copy;
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

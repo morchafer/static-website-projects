@@ -1,0 +1,47 @@
+@use "variables" as v;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: v.$fuenteSecundaria;
+  font-size: 1.6rem;
+  background-color: v.$cafeClaro;
+}
+
+p {
+  color: v.$negro;
+  line-height: 2;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: v.$negro;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

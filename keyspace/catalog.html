@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/the.css">
+    <link rel="icon" type="image/x-icon" href="imgs/saturn.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8d4f81645.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Keyspace - Catálogo</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar-format">
+            <a href="index.html"><img src="imgs/logos/logo.svg" alt="Keyspace, el teclado a tu medida" id="logo"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="catalog.html" class="shdw-hover-a color-when-scrolling">Catálogo</a></li>
+                    <li><a href="learn.html" class="shdw-hover-a color-when-scrolling">Aprender</a></li>
+                    <li><a href="support.html" class="shdw-hover-a color-when-scrolling">Soporte</a></li>
+                    <li><a href="about.html" class="shdw-hover-a color-when-scrolling">Nosotros</a></li>
+                    <li id="btn-login" class="open-modal"><i class="fas fa-lock fa-lg"></i> Ingresar</li>
+                    <li id="btn-cart" class="open-modal"><i class="fas fa-shopping-cart fa-lg"></i> Carrito</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cover bg-img">
+            <div class="transparency-cover">
+                <div class="right-cover-grid frame-a">
+                    <h1>Descubre lo que tenemos para ti!</h1>
+                    <p>Consigue el teclado a tu medida, o <a href="#build-k" class="white-color underline">construye desde cero tu teclado ideal.</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Log In Modal -->
+    <div class="modal-display-control modal-bg log-flag-class">
+        <div class="frame-a-flex">
+            <div class="extra-item"></div>
+            <div class="main-item">
+                <div class="modal-container">
+                    <span class="close-modal">&times;</span>
+                    <div class="log-in-flex">
+                        <img src="imgs/logos/dark-logo.svg" alt="Keyspace, el teclado a tu medida">
+                        <h2>Te damos la bienvenida a Keyspace</h2>
+                        <input type="text" placeholder="Correo">
+                        <input type="password" placeholder="Contraseña">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                        <button class="btn-dark-w100">Iniciar sesión</button>
+                        <p class="center-text">Al continuar, aceptas las <a href="#">Condiciones de servicio</a>  de Keyspace y reconoces que leíste nuestra <a href="#">Política de privacidad</a>.</p>
+                        <div>
+                            <p>¿Aún no estás registrado?</p>
+                            <span class="open-modal center-text">Regístrate aquí.</span>
+                        </div>
+                    </div> <!-- log-in-flex -->
+                </div> <!-- modal-container -->
+            </div> <!-- main-item -->
+            <div class="extra-item"></div>
+        </div> <!-- frame-a-flex -->
+    </div> <!-- Log In Modal -->
+    
+    <!-- Shopping Cart Modal -->
+    <div class="modal-display-control modal-bg">
+        <div class="frame-a-flex">
+            <div class="extra-item"></div>
+            <div class="main-item">
+                <span class="cart-flag-class"></span>
+                <div class="modal-container">
+                    <div>
+                        <span class="close-modal">&times;</span>
+                        <div class="shopping-cart-flex">
+                            <p>¡Oh no! Aún no tienes productos en tu carrito...</p>
+                            <p>Visita el <a href="catalog.html">catálogo</a> para checar nuestros productos.</p>
+                        </div> <!-- shopping-cart-flex -->
+                    </div>
+                </div> <!-- modal-container -->
+            </div> <!-- main-item -->
+            <div class="extra-item"></div>
+        </div> <!-- frame-a-flex -->
+    </div> <!-- Shopping Cart Modal -->
+
+    <!-- Sign Up Modal -->
+    <div class="sign-flag-class">
+        <div class="modal-display-control modal-bg log-flag-class">
+            <div class="frame-a-flex">
+                <div class="extra-item"></div>
+                <div class="main-item">
+                    <div class="modal-container sign-flag-class">
+                        <div class="log-in-flex">
+                            <img src="imgs/logos/dark-logo.svg" alt="Keyspace, el teclado a tu medida">
+                            <h2>Te damos la bienvenida a Keyspace</h2>
+                            <input type="text" placeholder="Escribe tu correo">
+                            <input type="password" placeholder="Crea una contraseña">
+                            <button class="btn-dark-w100">Continuar</button>
+                            <p class="center-text">Al continuar, aceptas las <a href="#">Condiciones de servicio</a>  de Keyspace y reconoces que leíste nuestra <a href="#">Política de privacidad</a>.</p>
+                            <div>
+                                <p>¿Ya eres miembro?</p>
+                                <span class="center-text close-modal">Inicia sesión.</span>
+                            </div>
+                        </div> <!-- log-in-flex (Sign Up Modal) -->
+                    </div> <!-- modal-container -->
+                </div> <!-- main-item -->
+                <div class="extra-item"></div>
+            </div> <!-- frame-a-flex -->
+        </div> <!-- Sign Up Modal -->
+    </div> <!-- sign-flag-class -->
+
+    <main>
+        <div class="frame-a">
+            <h2>Clasificación de los teclados por tamaño:</h2>
+            <div class="graph-grid">
+                <div class="axis-y">
+                    <a href="#catal">TK-FnBar-Arrows-NumBar-Less</a>
+                    <a href="#catal">TK-FnBar-Arrows-Less</a>
+                    <a href="#catal">TKL-Compact</a>
+                    <a href="#catal">TKL TenKeyLess </a>
+                    <a href="#catal">1800-Compact</a>
+                </div>
+                <div class="graph-info">
+                    <div><p>40%</p></div>
+                    <div><p>60%</p></div>
+                    <div><p>70%</p></div>
+                    <div><p>80%</p></div>
+                    <div><p>90%</p></div>
+                </div>
+                <div class="axis-x">
+                    <p>0%</p>
+                    <p>Tamaños</p>
+                    <p>100%</p>
+                </div>
+            </div> <!-- graph-grid -->
+        </div> <!-- frame-a -->
+        <div class="search-grid">
+            <h2>Catálogo</h2>
+            <div>
+                <input type="text" placeholder="Buscar teclado por nombre...">
+                <button>Buscar</button>
+            </div>
+        </div>
+        <div class="bgc-light" id="catal">
+            <section class="frame-a catal-grid">
+                <div class="left-catal-grid">
+                    <div>
+                        <h3>Categorías</h3>
+                        <div class="cats-grid">
+                            <div>
+                                <a href="#">1800-Compact (90%)</a>
+                                <a href="#">TKL TenKeyLess (80%)</a>
+                                <a href="#">TKL-Compact (70%)</a>
+                                <a href="#">TK-FnBar-Arrows-Less (60%)</a>
+                                <a href="#">TK-FnBar-Arrows-NumBar-Less (40%)</a>
+                                <a href="#">Edición Especial</a>
+                            </div>
+                            <div>
+                                <p>(n)</p>
+                                <p>(n)</p>
+                                <p>(n)</p>
+                                <p>(n)</p>
+                                <p>(n)</p>
+                                <p>(n)</p>
+                            </div>
+                        </div> <!-- cats-grid -->
+                    </div> <!-- categories (sizes) -->
+                    <article>
+                        <h3>Lo más vendido</h3>
+                        <div class="best-sellers-grid">
+                            <img src="imgs/products-300x210/p1.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                            <div>
+                                <h4>Nombre del teclado</h4>
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <p>$1,499.00 MXN</p>
+                            </div>
+                            
+                            <img src="imgs/products-300x210/p2.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                            <div>
+                                <h4>Nombre del teclado</h4>
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <p>$1,499.00 MXN</p>
+                            </div>
+                            
+                            <img src="imgs/products-300x210/p3.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                            <div>
+                                <h4>Nombre del teclado</h4>
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <p>$1,499.00 MXN</p>
+                            </div>
+                            
+                            <img src="imgs/products-300x210/p4.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                            <div>
+                                <h4>Nombre del teclado</h4>
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <p>$1,499.00 MXN</p>
+                            </div>
+                            
+                            <img src="imgs/products-300x210/p5.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                            <div>
+                                <h4>Nombre del teclado</h4>
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <p>$1,499.00 MXN</p>
+                            </div>
+                            
+                            <img src="imgs/products-300x210/p6.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                            <div>
+                                <h4>Nombre del teclado</h4>
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <p>$1,499.00 MXN</p>
+                            </div>
+                        </div> <!-- best-sellers-grid -->
+                    </article> <!-- best sellers -->
+                    <div>
+                        <h3>Filtrar por</h3>
+                        <div class="filters">
+                            <button class="accordion">Precio</button>
+                            <div class="panel">
+                                <label>
+                                    <input type="radio" name="price">
+                                    Menos de $900.00 MXN
+                                </label>
+                                <label>
+                                    <input type="radio" name="price">
+                                    De $900.00 MXN a $1,900.00 MXN
+                                </label>
+                                <label>
+                                    <input type="radio" name="price">
+                                    De $1,900.00 MXN a $2,900.00 MXN
+                                </label>
+                                <label>
+                                    <input type="radio" name="price" checked>
+                                    Más de $2,900.00 MXN
+                                </label>
+                            </div>
+
+                            <button class="accordion">Ofertas</button>
+                            <div class="panel">
+                                <label>
+                                    <input type="radio" name="off">
+                                    Sí
+                                </label>
+                                <label>
+                                    <input type="radio" name="off" checked>
+                                    No
+                                </label>
+                            </div>
+
+                            <button class="accordion">Compatibilidad</button>
+                            <div class="panel">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Microsoft Windows
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    Mac OS X
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    Android
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    iOS
+                                </label>
+                            </div>
+
+                            <button class="accordion">Color de keycaps</button>
+                            <div class="panel">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Rojo tinto
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Violeta
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Lila
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Azul marino
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Verde militar
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Marrón neón
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Amarillo canario
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Naranja neón
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Plata
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Negro mate
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Negro
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Blanco
+                                </label>
+                            </div>
+
+                            <button class="accordion">Calificación</button>
+                            <div class="panel">
+                                <label>
+                                    <input type="radio" name="qualif" checked>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </label>
+                                <label>
+                                    <input type="radio" name="qualif">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </label>
+                                <label>
+                                    <input type="radio" name="qualif">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </label>
+                            </div>
+                        </div> <!-- filters -->
+                    </div> <!-- filters -->
+                </div> <!-- left-catal-grid -->
+                <div class="right-catal-grid">
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p1.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p1.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p2.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p2.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p3.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p3.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p4.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p4.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p5.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p5.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p6.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p6.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p7.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p7.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p8.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p8.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p9.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p9.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p10.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p10.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p11.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p11.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p12.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p12.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p13.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p13.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p14.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p14.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p15.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p15.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p16.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p16.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p17.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p17.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p18.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p18.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p19.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p19.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p20.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p20.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <article class="small-item-grid">
+                        <img src="imgs/products-300x210/p21.jpg" alt="Teclado mecánico con keycaps de distintos colores" class="open-modal">
+                        <div>
+                            <h4>Nombre del teclado</h4>
+                            <span class="cat">Categoría</span>
+                            <p class="price">$1,499.00 MXN</p>
+                            <span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- Modal -->
+                    <div class="modal-display-control modal-bg">
+                        <div class="frame-a-flex">
+                            <div class="extra-item"></div>
+                            <div class="main-item">
+                                <div class="modal-container">
+                                    <div class="product-modal-grid">
+                                        <img src="imgs/products-1000x700/p21.jpg" alt="Teclado mecánico con keycaps de distintos colores">
+                                        <div class="product-modal-flex">
+                                            <h4>Nombre del teclado</h4>
+                                            <span class="cat">Categoría</span>
+                                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos amet odio corporis cumque reiciendis iure nesciunt, corrupti similique suscipit excepturi ab blanditiis. Omnis ratione minus fugiat sint dolorum harum aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ut.</p>
+                                            <p class="price">$1,499.00 MXN</p>
+                                            <div class="product-btns-grid">
+                                                <button class="btn-light">Comprar este producto</button>
+                                                <button class="btn-dark">Agregar al carrito</button>
+                                            </div>
+                                        </div> <!-- product-modal-flex -->
+                                        <span class="close-modal">&times;</span>
+                                    </div> <!-- product-modal-grid -->
+                                </div> <!-- modal-container -->
+                            </div> <!-- main-item -->
+                            <div class="extra-item"></div>
+                        </div> <!-- frame-a-flex -->
+                    </div> <!-- Modal -->
+                    <div class="pagination">
+                        <div>
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>Siguiente &#62;</span>
+                        </div>
+                    </div>
+                </div> <!-- right-catal-grid -->
+            </section> <!-- catal-grid -->
+        </div> <!-- bgc-light -->
+        <section class="bgc-dark payments pddng-tb-10r">
+            <div class="frame-a">
+                <h2>Métodos de Pago</h2>
+                <span class="light-divider"></span>
+                <p class="payments-subtitle">Puedes pagar por nuestros productos a través de PayPal, con tarjetas de crédito y más!</p>
+                <div class="payments-grid">
+                    <div>
+                        <h3>PayPal</h3>
+                        <p>PayPal es el método de pago en línea más rápido y seguro.</p>
+                    </div>
+                    <div>
+                        <h3>Tarjeta de crédito</h3>
+                        <p>Los pagos con Visa, Mastercard y Amex son aceptados en todo el mundo.</p>
+                    </div>
+                    <div>
+                        <h3>Oxxo</h3>
+                        <p>También puedes pagar en tu tienda Oxxo más cercana.</p>
+                    </div>
+                    <div>
+                        <h3>SPEI</h3>
+                        <p>O, a través de SPEI (Sistema de Pagos Electrónicos Interbancarios).</p>
+                    </div>
+                </div>
+                <h3>Criptomonedas</h3>
+                <p>Incluso puedes pagar con las criptomonedas más populares! (Bitcoin, Ether, Litecoin).</p>
+                <div class="payments-flex">
+                    <img src="imgs/payments/paypal.webp" alt="Se permiten pagos con PayPal">
+                    <img src="imgs/payments/visa.webp" alt="Se permiten pagos con Visa">
+                    <img src="imgs/payments/mastercard.webp" alt="Se permiten pagos con Mastercard">
+                    <img src="imgs/payments/amex.webp" alt="Se permiten pagos con American Express">
+                    <img src="imgs/payments/oxxo.webp" alt="Se permiten pagos en Tiendas Oxxo">
+                    <img src="imgs/payments/spei.webp" alt="Se permiten pagos con SPEI">
+                    <img src="imgs/payments/bitcoin.webp" alt="Se permiten pagos con Bitcoin">
+                    <img src="imgs/payments/ethereum.webp" alt="Se permiten pagos con Ethereum">
+                    <img src="imgs/payments/litecoin.webp" alt="Se permiten pagos con Litecoin">
+                </div>
+            </div> <!-- frame-a -->
+        </section> <!-- bgc-dark payments -->
+        <span id="build-k"></span>
+        <article class="frame-b learning-section brdr-rad mrgn-tb-10r">
+            <div class="learning-section-flex">
+                <h2>Construye desde cero tu teclado ideal!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias ut asperiores ipsa facere dolore?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas dolorem non aut velit, ipsum sint maxime culpa perferendis nulla!</p>
+                <p>Comienza ahora. Haz clic <a href="learn.html">aquí.</a></p>
+            </div>
+        </article>
+        <section class="frame-a apps-grid">
+            <div>
+                <h2>Síguenos la pista en nuestras redes sociales y entérate de todo</h2>
+                <p>Todos los días publicamos novedades y promociones que no te puedes perder!</p>
+                <div class="social">
+                    <a href="https://linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="fab fa-youtube fa-3x"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h2>Descarga nuestra app disponible en App Store y Google Play</h2>
+                <p>Y obtén descuentos con códigos promocionales exclusivos de la tienda!</p>
+                <div class="store">
+                    <a href="https://apple.com/app-store/" target="_blank"><img src="imgs/appstore.png" alt="Disponible en App Store"></a>
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="imgs/googleplay.png" alt="Disponible en Google Play"></a>
+                </div>
+            </div>
+        </section> <!-- apps-grid -->
+    </main>
+
+    <footer>
+        <p class="open-modal open-footer bg-img"><i class="far fa-hand-point-up fa-3x"></i></p>
+        <div class="modal-display-control modal-bg">
+            <div class="modal-footer bg-img">
+                <div class="transparency-modal-footer">
+                    <div class="footer-grid frame-a">
+                        <div>
+                            <h3>Todos los tamaños</h3>
+                            <a href="catalog.html">1800-Compact (90%)</a>
+                            <a href="catalog.html">TKL TenKeyLess (80%)</a>
+                            <a href="catalog.html">TKL-Compact (70%)</a>
+                            <a href="catalog.html">TK-FnBar-Arrows-Less (60%)</a>
+                            <a href="catalog.html">TK-FnBar-Arrows-NumBar-Less (40%)</a>
+                        </div>
+                        <div>
+                            <h3>Soporte</h3>
+                            <a href="support.html">Preguntas frecuentes</a>
+                            <a href="support.html">Chat en línea</a>
+                            <a href="support.html">Firmware</a>
+                            <a href="learn.html">Tutoriales</a>
+                        </div>
+                        <div>
+                            <h3>Empresa</h3>
+                            <a href="about.html">Conoce más sobre Keyspace</a>
+                            <a href="about.html">Contactar</a>
+                            <a href="#">Carreras</a>
+                            <a href="#">Política de Privacidad</a>
+                            <a href="#">Términos del Servicio</a>
+                        </div>
+                        <span class="close-modal close-modal-footer">&times;</span>
+                    </div> <!-- footer-grid -->
+                    <p class="design-data">Noviembre 2021 / Daniel Chavarin</p>
+                </div> <!-- transparency-modal-footer -->
+            </div> <!-- modal-footer -->
+        </div> <!-- modal-bg -->
+    </footer>
+
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/navbar-style.js"></script>
+    <script src="js/modal-windows.js"></script>
+    <script>
+        // bg-img update
+        var bg_img = document.getElementsByClassName("bg-img");
+        for (let i = 0; i < bg_img.length; i++){
+            bg_img[i].style.backgroundImage = "url(imgs/bg-img/catalog-bg-img.jpg)";
+        }
+    </script>
+
+</body>
+</html>
+

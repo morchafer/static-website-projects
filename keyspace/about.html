@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/the.css">
+    <link rel="icon" type="image/x-icon" href="imgs/saturn.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8d4f81645.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Keyspace - Nosotros</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar-format">
+            <a href="index.html"><img src="imgs/logos/logo.svg" alt="Keyspace, el teclado a tu medida" id="logo"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="catalog.html" class="shdw-hover-a color-when-scrolling">Catálogo</a></li>
+                    <li><a href="learn.html" class="shdw-hover-a color-when-scrolling">Aprender</a></li>
+                    <li><a href="support.html" class="shdw-hover-a color-when-scrolling">Soporte</a></li>
+                    <li><a href="about.html" class="shdw-hover-a color-when-scrolling">Nosotros</a></li>
+                    <li id="btn-login" class="open-modal"><i class="fas fa-lock fa-lg"></i> Ingresar</li>
+                    <li id="btn-cart" class="open-modal"><i class="fas fa-shopping-cart fa-lg"></i> Carrito</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cover bg-img flag-class">
+            <div class="transparency-cover">
+                <div class="complete-cover-flex frame-a">
+                    <div class="transparency ">
+                        <h1>Sobre Keyspace</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Log In Modal -->
+    <div class="modal-display-control modal-bg log-flag-class">
+        <div class="frame-a-flex">
+            <div class="extra-item"></div>
+            <div class="main-item">
+                <div class="modal-container">
+                    <span class="close-modal">&times;</span>
+                    <div class="log-in-flex">
+                        <img src="imgs/logos/dark-logo.svg" alt="Keyspace, el teclado a tu medida">
+                        <h2>Te damos la bienvenida a Keyspace</h2>
+                        <input type="text" placeholder="Correo">
+                        <input type="password" placeholder="Contraseña">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                        <button class="btn-dark-w100">Iniciar sesión</button>
+                        <p class="center-text">Al continuar, aceptas las <a href="#">Condiciones de servicio</a>  de Keyspace y reconoces que leíste nuestra <a href="#">Política de privacidad</a>.</p>
+                        <div>
+                            <p>¿Aún no estás registrado?</p>
+                            <span class="open-modal center-text">Regístrate aquí.</span>
+                        </div>
+                    </div> <!-- log-in-flex -->
+                </div> <!-- modal-container -->
+            </div> <!-- main-item -->
+            <div class="extra-item"></div>
+        </div> <!-- frame-a-flex -->
+    </div> <!-- Log In Modal -->
+    
+    <!-- Shopping Cart Modal -->
+    <div class="modal-display-control modal-bg">
+        <div class="frame-a-flex">
+            <div class="extra-item"></div>
+            <div class="main-item">
+                <span class="cart-flag-class"></span>
+                <div class="modal-container">
+                    <div>
+                        <span class="close-modal">&times;</span>
+                        <div class="shopping-cart-flex">
+                            <p>¡Oh no! Aún no tienes productos en tu carrito...</p>
+                            <p>Visita el <a href="catalog.html">catálogo</a> para checar nuestros productos.</p>
+                        </div> <!-- shopping-cart-flex -->
+                    </div>
+                </div> <!-- modal-container -->
+            </div> <!-- main-item -->
+            <div class="extra-item"></div>
+        </div> <!-- frame-a-flex -->
+    </div> <!-- Shopping Cart Modal -->
+
+    <!-- Sign Up Modal -->
+    <div class="sign-flag-class">
+        <div class="modal-display-control modal-bg log-flag-class">
+            <div class="frame-a-flex">
+                <div class="extra-item"></div>
+                <div class="main-item">
+                    <div class="modal-container sign-flag-class">
+                        <div class="log-in-flex">
+                            <img src="imgs/logos/dark-logo.svg" alt="Keyspace, el teclado a tu medida">
+                            <h2>Te damos la bienvenida a Keyspace</h2>
+                            <input type="text" placeholder="Escribe tu correo">
+                            <input type="password" placeholder="Crea una contraseña">
+                            <button class="btn-dark-w100">Continuar</button>
+                            <p class="center-text">Al continuar, aceptas las <a href="#">Condiciones de servicio</a>  de Keyspace y reconoces que leíste nuestra <a href="#">Política de privacidad</a>.</p>
+                            <div>
+                                <p>¿Ya eres miembro?</p>
+                                <span class="center-text close-modal">Inicia sesión.</span>
+                            </div>
+                        </div> <!-- log-in-flex (Sign Up Modal) -->
+                    </div> <!-- modal-container -->
+                </div> <!-- main-item -->
+                <div class="extra-item"></div>
+            </div> <!-- frame-a-flex -->
+        </div> <!-- Sign Up Modal -->
+    </div> <!-- sign-flag-class -->
+
+    <main>
+        <div class="who-we-are frame-a">
+            <div>
+                <h2>Quiénes Somos</h2>
+                <span class="dark-divider"></span>
+                <p>Keyspace es un proveedor líder mundial de teclados mecánicos de calidad, ofreciendo a millones de personas productos ajustados a cualquier gusto y bolsillo.</p>
+            </div>
+            <img src="imgs/who-we-are.jpg" alt="Personas sentadas trabajando en un escritorio con computadoras">
+        </div>
+        <div class="frame-a mrgn-tb-10r">
+            <hr>
+            <h2>Nuestro Equipo</h2>
+            <span class="dark-divider"></span>
+            <section class="team-grid">
+                <div class="left-team-grid">
+                    <div>
+                        <img src="imgs/team/CEO.jpg" alt="Director Ejecutivo">
+                        <h3>Daniel</h3>
+                        <p>Director Ejecutivo</p>
+                        <span>daniel@keyspace.com</span>
+                    </div>
+                    <div>
+                        <img src="imgs/team/ADM.jpg" alt="Director Administrativo">
+                        <h3>Moises</h3>
+                        <p>Director Administrativo</p>
+                        <span>moises@keyspace.com</span>
+                    </div>
+                    <div>
+                        <img src="imgs/team/CCO.jpg" alt="Directora de Diseño">
+                        <h3>Laura</h3>
+                        <p>Directora de Diseño</p>
+                        <span>laura@keyspace.com</span>
+                    </div>
+                    <div>
+                        <img src="imgs/team/CMO.jpg" alt="Director de Marketing">
+                        <h3>Carlos</h3>
+                        <p>Director de Marketing</p>
+                        <span>carlos@keyspace.com</span>
+                    </div>
+                </div> <!-- left-team-grid -->
+                <div class="right-team-grid">
+                    <div>
+                        <img src="imgs/team/SALES.jpg" alt="Directora de Ventas">
+                        <h3>María</h3>
+                        <p>Directora de Ventas</p>
+                        <span>maria@keyspace.com</span>
+                    </div>
+                    <div>
+                        <img src="imgs/team/CFO.jpg" alt="Director de Finanzas">
+                        <h3>Santiago</h3>
+                        <p>Director de Finanzas</p>
+                        <span>santiago@keyspace.com</span>
+                    </div>
+                    <div>
+                        <img src="imgs/team/CTO.jpg" alt="Director de Software">
+                        <h3>Fernando</h3>
+                        <p>Director de Software</p>
+                        <span>fernando@keyspace.com</span>
+                    </div>
+                    <div>
+                        <img src="imgs/team/COO.jpg" alt="Directora de Operaciones">
+                        <h3>Sofía</h3>
+                        <p>Directora de Operaciones</p>
+                        <span>sofia@keyspace.com</span>
+                    </div>
+                </div> <!-- right-team-grid -->
+            </section> <!-- team-grid -->
+        </div> <!-- frame-a -->
+        <div class="frame-a">
+            <hr>
+            <h2>Razones para elegirnos:</h2>
+            <div class="reasons-grid">
+                <div>
+                    <i class="fas fa-globe-americas fa-4x"></i>
+                    <h3>Envíos al mundo entero</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde facilis blanditiis, fugiat odit vitae?</p>
+                </div>
+                <div>
+                    <i class="fas fa-keyboard fa-4x"></i>
+                    <h3>Productos de la mejor calidad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde facilis blanditiis, fugiat odit vitae?</p>
+                </div>
+                <div>
+                    <i class="fas fa-tags fa-4x"></i>
+                    <h3>Las mejores ofertas todo el año</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde facilis blanditiis, fugiat odit vitae?</p>
+                </div>
+                <div>
+                    <i class="fas fa-lock fa-4x"></i>
+                    <h3>Pagos totalmente seguros</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde facilis blanditiis, fugiat odit vitae?</p>
+                </div>
+            </div>
+        </div> <!-- frame-a -->
+        <article class="frame-a">
+            <h2>¿Tienes alguna consulta? Contáctanos!</h2>
+            <span class="dark-divider"></span>
+            <form class="contact-us">
+                <fieldset>
+                    <legend>Tus datos</legend>
+                    <input type="text" placeholder="NOMBRE" required>
+                    <input type="text" placeholder="ASUNTO" required>
+                    <input type="email" placeholder="EMAIL" required>
+                    <textarea rows="10" cols="20" placeholder="MENSAJE" required></textarea>
+                </fieldset>
+                <input class="btn-dark-w100" type="submit" value="Enviar mensaje">
+            </form>
+        </article> <!-- frame-a -->
+        <section class="frame-a apps-grid">
+            <div>
+                <h2>Síguenos la pista en nuestras redes sociales y entérate de todo</h2>
+                <p>Todos los días publicamos novedades y promociones que no te puedes perder!</p>
+                <div class="social">
+                    <a href="https://linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="fab fa-youtube fa-3x"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h2>Descarga nuestra app disponible en App Store y Google Play</h2>
+                <p>Y obtén descuentos con códigos promocionales exclusivos de la tienda!</p>
+                <div class="store">
+                    <a href="https://apple.com/app-store/" target="_blank"><img src="imgs/appstore.png" alt="Disponible en App Store"></a>
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="imgs/googleplay.png" alt="Disponible en Google Play"></a>
+                </div>
+            </div>
+        </section> <!-- apps-grid -->
+    </main>
+
+    <footer>
+        <p class="open-modal open-footer bg-img"><i class="far fa-hand-point-up fa-3x"></i></p>
+        <div class="modal-display-control modal-bg">
+            <div class="modal-footer bg-img">
+                <div class="transparency-modal-footer">
+                    <div class="footer-grid frame-a">
+                        <div>
+                            <h3>Todos los tamaños</h3>
+                            <a href="catalog.html">1800-Compact (90%)</a>
+                            <a href="catalog.html">TKL TenKeyLess (80%)</a>
+                            <a href="catalog.html">TKL-Compact (70%)</a>
+                            <a href="catalog.html">TK-FnBar-Arrows-Less (60%)</a>
+                            <a href="catalog.html">TK-FnBar-Arrows-NumBar-Less (40%)</a>
+                        </div>
+                        <div>
+                            <h3>Soporte</h3>
+                            <a href="support.html">Preguntas frecuentes</a>
+                            <a href="support.html">Chat en línea</a>
+                            <a href="support.html">Firmware</a>
+                            <a href="learn.html">Tutoriales</a>
+                        </div>
+                        <div>
+                            <h3>Empresa</h3>
+                            <a href="about.html">Conoce más sobre Keyspace</a>
+                            <a href="about.html">Contactar</a>
+                            <a href="#">Carreras</a>
+                            <a href="#">Política de Privacidad</a>
+                            <a href="#">Términos del Servicio</a>
+                        </div>
+                        <span class="close-modal close-modal-footer">&times;</span>
+                    </div> <!-- footer-grid -->
+                    <p class="design-data">Noviembre 2021 / Daniel Chavarin</p>
+                </div> <!-- transparency-modal-footer -->
+            </div> <!-- modal-footer -->
+        </div> <!-- modal-bg -->
+    </footer>
+
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/navbar-style.js"></script>
+    <script src="js/modal-windows.js"></script>
+    <script>
+        // bg-img update
+        var bg_img = document.getElementsByClassName("bg-img");
+        for (let i = 0; i < bg_img.length; i++){
+            bg_img[i].style.backgroundImage = "url(imgs/bg-img/about-bg-img.jpg)";
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Meeti - The people platform where interests become friendships
+    </title>
+    <link
+      rel="shortcut icon"
+      href="./build/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__nav contenedor">
+        <div class="header__logo-contenedor">
+          <a class="header__logo-enlace" href="index.html">
+            <img
+              class="header__logo"
+              src="build/img/logo.png"
+              alt="Logo Meeti"
+            />
+          </a>
+        </div>
+        <nav class="nav">
+          <a class="nav__link nav__link--color" href="#">Crear Grupo</a>
+          <a class="nav__link" href="#">Iniciar Sesión</a>
+          <a class="nav__link" href="#">Registrarse</a>
+        </nav>
+      </div>
+      <div class="header__hero">
+        <div class="header__texto contenedor">
+          <h1 class="header__heading">
+            Encuentra o Crea un grupo para compartir lo que más te gusta
+          </h1>
+          <a class="header__boton" href="#">Obtener una cuenta</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="busqueda">
+      <div class="busqueda__contenido contenedor">
+        <h2 class="busqueda__heading">Busca un grupo en tu ciudad</h2>
+        <form class="busqueda__formulario">
+          <select class="busqueda__campo">
+            <option class="busqueda__option">Programación</option>
+            <option class="busqueda__option">Diseño</option>
+            <option class="busqueda__option">Negocios</option>
+            <option class="busqueda__option">Moda</option>
+            <option class="busqueda__option">Ejercicio y Salud</option>
+            <option class="busqueda__option">Fotografía</option>
+            <option class="busqueda__option">Comida</option>
+            <option class="busqueda__option">Diseño Interior</option>
+            <option class="busqueda__option">Café</option>
+            <option class="busqueda__option">Cine</option>
+            <option class="busqueda__option">Libros</option>
+            <option class="busqueda__option">Emprendimiento</option>
+          </select>
+          <input
+            type="text"
+            class="busqueda__campo"
+            placeholder="Nombre del evento"
+          />
+          <input
+            type="text"
+            class="busqueda__campo"
+            placeholder="Ciudad o País"
+          />
+          <input type="submit" class="busqueda__campo" value="Buscar" />
+        </form>
+      </div>
+      <!-- .busqueda__contenido -->
+    </section>
+    <!-- .busqueda -->
+
+    <section class="eventos contenedor">
+      <h2 class="eventos__heading">Próximos eventos</h2>
+      <div class="eventos__grid">
+        <div class="evento">
+          <a class="evento__link" href="meeti.html">
+            <img
+              class="evento__imagen"
+              src="build/img/imagen1.jpg"
+              alt="Evento"
+            />
+          </a>
+          <div class="evento__info">
+            <div class="evento__data">
+              <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
+              <p class="evento__nombre">Ideas de Negocios</p>
+            </div>
+            <div class="metadata">
+              <img
+                class="metadata__imagen"
+                src="build/img/perfil1.jpg"
+                alt="Autor"
+              />
+              <p class="metadata__autor">
+                Organizado por:
+                <span class="metadata__autor--nombre">Fernando Morales</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- .evento -->
+        <div class="evento">
+          <a class="evento__link" href="meeti.html">
+            <img
+              class="evento__imagen"
+              src="build/img/imagen2.jpg"
+              alt="Evento"
+            />
+          </a>
+          <div class="evento__info">
+            <div class="evento__data">
+              <p class="evento__fecha">Lunes 02 de Octubre de 2022</p>
+              <p class="evento__nombre">Bitcoin y otras Criptos</p>
+            </div>
+            <div class="metadata">
+              <img
+                class="metadata__imagen"
+                src="build/img/perfil1.jpg"
+                alt="Autor"
+              />
+              <p class="metadata__autor">
+                Organizado por:
+                <span class="metadata__autor--nombre">Fernando Morales</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- .evento -->
+        <div class="evento">
+          <a class="evento__link" href="meeti.html">
+            <img
+              class="evento__imagen"
+              src="build/img/imagen3.jpg"
+              alt="Evento"
+            />
+          </a>
+          <div class="evento__info">
+            <div class="evento__data">
+              <p class="evento__fecha">Miércoles 04 de Octubre de 2022</p>
+              <p class="evento__nombre">Pizza paso a paso</p>
+            </div>
+            <div class="metadata">
+              <img
+                class="metadata__imagen"
+                src="build/img/perfil2.jpg"
+                alt="Autor"
+              />
+              <p class="metadata__autor">
+                Organizado por:
+                <span class="metadata__autor--nombre">Marcelino Pérez</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- .evento -->
+      </div>
+      <!-- .eventos__grid -->
+    </section>
+    <!-- .eventos -->
+
+    <section class="categorias">
+      <div class="categorias__contenido contenedor">
+        <h2 class="categorias__heading">Categorías</h2>
+        <div class="categorias__grid">
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_1.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Programación</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_2.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Diseño UX & UI</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_3.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Negocios e Ideas</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_4.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Ropa y Moda</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_5.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Ejercicio y Bienestar</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_6.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Fotografía</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_7.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Comida</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_8.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Diseño Interior</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_9.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Café</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_10.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Cine</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_11.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Libros</p>
+          </div>
+          <div class="categorias__card">
+            <img
+              class="categoria__imagen"
+              src="build/img/categoria_12.jpg"
+              alt="Categoría"
+            />
+            <p class="categorias__nombre">Emprendimiento</p>
+          </div>
+        </div>
+        <!-- .categorias__grid -->
+      </div>
+      <!-- .categorias__contenido -->
+    </section>
+    <!-- .categorias -->
+
+    <section class="grupo">
+      <div class="grupo__grid contenedor">
+        <div class="grupo__box">
+          <h3 class="grupo__caption">Crea un grupo</h3>
+          <p class="grupo__texto">
+            Comparte lo que te gusta o tu pasión con los demás, crea tu propio
+            grupo y eventos; hoy mismo sin costos
+          </p>
+        </div>
+        <div class="grupo__box">
+          <h3 class="grupo__caption">Únete a un grupo</h3>
+          <p class="grupo__texto">
+            Conoce personas con tus mismos gustos y pasiones, únete a un grupo
+            ya existente y asiste a próximos eventos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer contenedor">
+      <nav class="nav">
+        <a class="nav__link nav__link--color" href="#">Crear Grupo</a>
+        <a class="nav__link" href="#">Iniciar Sesión</a>
+        <a class="nav__link" href="#">Registrarse</a>
+      </nav>
+      <p class="footer__copyright">
+        Todos los derechos reservados. Meeti &copy;
+      </p>
+    </footer>
+  </body>
+</html>

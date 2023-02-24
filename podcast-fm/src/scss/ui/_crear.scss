@@ -1,0 +1,21 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.crear {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 1rem 5rem;
+  gap: 3rem;
+  @include m.tablet {
+    flex-direction: row;
+    align-items: center;
+  }
+  &__imagen {
+    @include m.tablet {
+      width: 50%;
+    }
+  }
+  &__heading {
+    @include m.heading(v.$secundario, v.$primario);
+  }
+}

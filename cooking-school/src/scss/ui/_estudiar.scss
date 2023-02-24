@@ -1,0 +1,36 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.estudiar {
+  padding-block: 1rem 6rem;
+  &__heading {
+    @include m.heading;
+  }
+  &__grid {
+    margin-top: 4rem;
+    @include m.grid(1, 6rem);
+    @include m.tablet {
+      @include m.grid(3, 2rem);
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    @include m.telefono {
+      max-width: 30rem;
+      margin: 0 auto;
+    }
+    @include m.tablet {
+      max-width: unset;
+      margin: unset;
+    }
+  }
+  &__caption,
+  &__texto {
+    text-align: center;
+    margin: 0;
+  }
+}

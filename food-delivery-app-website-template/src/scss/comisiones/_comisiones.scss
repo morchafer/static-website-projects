@@ -1,0 +1,38 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.comisiones {
+  padding: v.$separacion 1rem;
+  &__heading {
+    text-align: center;
+    color: v.$secundario;
+  }
+  &__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  &__texto {
+    color: v.$secundario;
+    line-height: 1.5;
+  }
+  &__boton {
+    @include m.boton(v.$primario, v.$blanco);
+    width: 100%;
+    @include m.desktop {
+      width: fit-content;
+    }
+  }
+  &__grid {
+    margin: 0 auto;
+    @include m.telefono {
+      width: 80%;
+    }
+    @include m.desktop {
+      width: 95%;
+      @include m.grid(2, v.$separacion);
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer {
+  border-bottom: 5px solid v.$primario;
+  &__contenido {
+    padding-block: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    @media (min-width: calc(v.$desktop - 100px)) {
+      flex-direction: row;
+      padding-block: 4rem;
+    }
+  }
+  &__copyright {
+    font-size: 2.4rem;
+    margin: 0;
+    text-align: center;
+  }
+}

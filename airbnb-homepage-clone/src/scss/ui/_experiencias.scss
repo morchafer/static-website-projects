@@ -1,0 +1,43 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.experiencias {
+  padding: 5rem 0 0;
+  &__heading {
+    @include m.heading(v.$secundario, v.$alpha);
+    margin-bottom: 3rem;
+  }
+  &__texto {
+    margin-bottom: 3rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    gap: 2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    @include m.desktop {
+      @include m.grid(3, 2rem);
+      overflow-x: unset;
+      overflow-y: unset;
+      scroll-snap-type: unset;
+    }
+  }
+  &__card {
+    scroll-snap-align: center;
+    @include m.desktop {
+      scroll-snap-align: unset;
+    }
+  }
+  &__imagen {
+    border-radius: 1rem;
+  }
+  &__info {
+    font-weight: 900;
+    font-size: 2rem;
+    &--texto {
+      font-size: 1.8rem;
+    }
+  }
+}

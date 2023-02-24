@@ -1,0 +1,58 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  &__enlace {
+    &::before {
+      content: "";
+      width: 3rem;
+      height: 3rem;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 3rem;
+    }
+    &[href*="facebook"] {
+      &::before {
+        background-image: url(../img/icono_facebook.svg);
+      }
+    }
+    &[href*="twitter"] {
+      &::before {
+        background-image: url(../img/icono_twitter.svg);
+      }
+    }
+    &[href*="instagram"] {
+      &::before {
+        background-image: url(../img/icono_instagram.svg);
+      }
+    }
+    &[href*="pinterest"] {
+      &::before {
+        background-image: url(../img/icono_pinterest.svg);
+      }
+    }
+    &[href*="youtube"] {
+      &::before {
+        background-image: url(../img/icono_youtube.svg);
+      }
+    }
+    &[href*="tiktok"] {
+      &::before {
+        background-image: url(../img/icono_tiktok.svg);
+      }
+    }
+  }
+  &__enlace-acc {
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+  }
+}

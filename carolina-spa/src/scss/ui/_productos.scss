@@ -1,0 +1,56 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.productos {
+  margin-top: 9rem;
+  &__grid {
+    max-width: 40rem;
+    margin: 5rem auto 0;
+    @include m.grid(1, 2rem);
+    @include m.tablet {
+      @include m.grid(2, 2rem);
+      max-width: 75rem;
+    }
+    @include m.desktopXL {
+      @include m.grid(4, 2rem);
+      max-width: unset;
+    }
+  }
+}
+
+.item {
+  &__imagen-contenedor {
+    overflow: hidden;
+  }
+  &__imagen {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__descripcion {
+    background-color: v.$blanco;
+    padding: 3rem;
+  }
+  &__caption {
+    font-size: 2.4rem;
+    color: v.$secundario;
+    text-align: center;
+    font-weight: 400;
+  }
+  &__texto {
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+  &__precio {
+    margin: 0;
+    font-size: 2.8rem;
+    color: v.$gris;
+    text-align: center;
+  }
+}

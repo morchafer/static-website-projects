@@ -1,0 +1,39 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.alojamientos {
+  padding: 5rem 0 0;
+  &__heading {
+    @include m.heading(v.$secundario, v.$alpha);
+    margin-bottom: 5rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 30rem);
+    gap: 4rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    @include m.tablet {
+      @include m.grid(2, 2rem);
+      overflow-x: unset;
+      overflow-y: unset;
+      scroll-snap-type: unset;
+    }
+    @include m.desktop {
+      @include m.grid(4, 2rem);
+    }
+  }
+  &__card {
+    scroll-snap-align: center;
+    @include m.tablet {
+      scroll-snap-align: unset;
+    }
+  }
+  &__imagen {
+    border-radius: 1rem;
+  }
+  &__texto {
+    text-align: center;
+  }
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/the.css">
+    <link rel="icon" type="image/x-icon" href="imgs/saturn.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8d4f81645.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Keyspace - Aprender</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar-format">
+            <a href="index.html"><img src="imgs/logos/logo.svg" alt="Keyspace, el teclado a tu medida" id="logo"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="catalog.html" class="shdw-hover-a color-when-scrolling">Catálogo</a></li>
+                    <li><a href="learn.html" class="shdw-hover-a color-when-scrolling">Aprender</a></li>
+                    <li><a href="support.html" class="shdw-hover-a color-when-scrolling">Soporte</a></li>
+                    <li><a href="about.html" class="shdw-hover-a color-when-scrolling">Nosotros</a></li>
+                    <li id="btn-login" class="open-modal"><i class="fas fa-lock fa-lg"></i> Ingresar</li>
+                    <li id="btn-cart" class="open-modal"><i class="fas fa-shopping-cart fa-lg"></i> Carrito</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cover bg-img">
+            <div class="transparency-cover">
+                <div class="left-cover-grid frame-a">
+                    <h1>+100 tutoriales sobre temas de tecnología!</h1>
+                    <p>Checa todas las categorías <a href="#tech-cats" class="white-color underline">aquí.</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Log In Modal -->
+    <div class="modal-display-control modal-bg log-flag-class">
+        <div class="frame-a-flex">
+            <div class="extra-item"></div>
+            <div class="main-item">
+                <div class="modal-container">
+                    <span class="close-modal">&times;</span>
+                    <div class="log-in-flex">
+                        <img src="imgs/logos/dark-logo.svg" alt="Keyspace, el teclado a tu medida">
+                        <h2>Te damos la bienvenida a Keyspace</h2>
+                        <input type="text" placeholder="Correo">
+                        <input type="password" placeholder="Contraseña">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                        <button class="btn-dark-w100">Iniciar sesión</button>
+                        <p class="center-text">Al continuar, aceptas las <a href="#">Condiciones de servicio</a>  de Keyspace y reconoces que leíste nuestra <a href="#">Política de privacidad</a>.</p>
+                        <div>
+                            <p>¿Aún no estás registrado?</p>
+                            <span class="open-modal center-text">Regístrate aquí.</span>
+                        </div>
+                    </div> <!-- log-in-flex -->
+                </div> <!-- modal-container -->
+            </div> <!-- main-item -->
+            <div class="extra-item"></div>
+        </div> <!-- frame-a-flex -->
+    </div> <!-- Log In Modal -->
+    
+    <!-- Shopping Cart Modal -->
+    <div class="modal-display-control modal-bg">
+        <div class="frame-a-flex">
+            <div class="extra-item"></div>
+            <div class="main-item">
+                <span class="cart-flag-class"></span>
+                <div class="modal-container">
+                    <div>
+                        <span class="close-modal">&times;</span>
+                        <div class="shopping-cart-flex">
+                            <p>¡Oh no! Aún no tienes productos en tu carrito...</p>
+                            <p>Visita el <a href="catalog.html">catálogo</a> para checar nuestros productos.</p>
+                        </div> <!-- shopping-cart-flex -->
+                    </div>
+                </div> <!-- modal-container -->
+            </div> <!-- main-item -->
+            <div class="extra-item"></div>
+        </div> <!-- frame-a-flex -->
+    </div> <!-- Shopping Cart Modal -->
+
+    <!-- Sign Up Modal -->
+    <div class="sign-flag-class">
+        <div class="modal-display-control modal-bg log-flag-class">
+            <div class="frame-a-flex">
+                <div class="extra-item"></div>
+                <div class="main-item">
+                    <div class="modal-container sign-flag-class">
+                        <div class="log-in-flex">
+                            <img src="imgs/logos/dark-logo.svg" alt="Keyspace, el teclado a tu medida">
+                            <h2>Te damos la bienvenida a Keyspace</h2>
+                            <input type="text" placeholder="Escribe tu correo">
+                            <input type="password" placeholder="Crea una contraseña">
+                            <button class="btn-dark-w100">Continuar</button>
+                            <p class="center-text">Al continuar, aceptas las <a href="#">Condiciones de servicio</a>  de Keyspace y reconoces que leíste nuestra <a href="#">Política de privacidad</a>.</p>
+                            <div>
+                                <p>¿Ya eres miembro?</p>
+                                <span class="center-text close-modal">Inicia sesión.</span>
+                            </div>
+                        </div> <!-- log-in-flex (Sign Up Modal) -->
+                    </div> <!-- modal-container -->
+                </div> <!-- main-item -->
+                <div class="extra-item"></div>
+            </div> <!-- frame-a-flex -->
+        </div> <!-- Sign Up Modal -->
+    </div> <!-- sign-flag-class -->
+
+    <main>
+        <article class="featured-tutorial-grid frame-a">
+            <img src="imgs/tutorials-thumbnails/featured-tutorial.jpg" alt="Este es el tutorial destacado de la semana">
+            <div>
+                <p class="featured-tutorial-cat">Tutorial destacado</p>
+                <h2>Título del tutorial</h2>
+                <p class="justify-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae sunt, molestias maiores ipsa minus unde inventore perferendis nulla aliquam odio corporis! Tempore optio asperiores aspernatur impedit unde earum, temporibus repellendus... <span class="dark-see-more">Ver más</span></p>
+                <div class="tutorial-author-grid">
+                    <img src="imgs/tutorials-thumbnails/author-0.jpg" alt="Daniel Chavarin es el autor del tutorial destacado">
+                    <div>
+                        <p>Daniel Chavarin</p>
+                        <p>Diciembre 14, 2021</p>
+                    </div>
+                </div> <!-- tutorial-author-grid -->
+            </div> <!-- tutorial data -->
+        </article> <!-- featured-tutorial-grid -->
+
+        <div class="frame-a mrgn-tb-10r">
+            <h2>Tutoriales más populares</h2>
+            <p class="title-description">¿Eres nuevo en Keyspace Tutoriales? Comienza con nuestras guías y recursos más vistos.</p>
+            <section class="three-tutorials-grid">
+                <div class="tutorial-card-grid">
+                    <img src="imgs/tutorials-thumbnails/t1.jpg" alt="Teclado retroiluminado de color azul">
+                    <div>
+                        <p class="tutorial-metadata">Fecha / Categoría</p>
+                        <h3>Título del tutorial</h3>
+                        <p class="justify-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nobis vitae repellendus, excepturi repudiandae esse, laudantium aspernatur eligendi impedit consequuntur tenetur quisquam enim hic at cumque praesentium... <span class="dark-see-more">Leer</span></p>
+                    </div>
+                </div>
+                <div class="tutorial-card-grid">
+                    <img src="imgs/tutorials-thumbnails/t2.jpg" alt="Teclado con retroiluminación multicolor en un escritorio">
+                    <div>
+                        <p class="tutorial-metadata">Fecha / Categoría</p>
+                        <h3>Título del tutorial</h3>
+                        <p class="justify-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nobis vitae repellendus, excepturi repudiandae esse, laudantium aspernatur eligendi impedit consequuntur tenetur quisquam enim hic at cumque praesentium... <span class="dark-see-more">Leer</span></p>
+                    </div>
+                </div>
+                <div class="tutorial-card-grid">
+                    <img src="imgs/tutorials-thumbnails/t3.jpg" alt="Persona jugando en su setup gamer">
+                    <div>
+                        <p class="tutorial-metadata">Fecha / Categoría</p>
+                        <h3>Título del tutorial</h3>
+                        <p class="justify-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nobis vitae repellendus, excepturi repudiandae esse, laudantium aspernatur eligendi impedit consequuntur tenetur quisquam enim hic at cumque praesentium... <span class="dark-see-more">Leer</span></p>
+                    </div>
+                </div>
+            </section> <!-- three-tutorials-grid -->
+        </div> <!-- frame-a -->
+        
+        <div class="subscribe frame-b">
+            <div class="subscribe-grid">
+                <h2>Mantente al tanto con las tendencias de la industria</h2>
+                <p>Suscríbete para conseguir consejos prácticos de primera categoría.</p>
+                <input type="text" placeholder="Correo electrónico*" class="subscribe-email">
+                <div class="subscribe-checkbox">
+                    <input type="checkbox">
+                    <p>* Al ingresar tu email, aceptas recibir el boletín de Keyspace. Puedes darte de baja en cualquier momento. Ve nuestra <a href="#">Política de privacidad.</a></p>
+                </div>
+                <button class="btn-light-w100">Inscribirme</button>
+            </div> <!-- subscribe-grid -->
+        </div> <!-- subscribe -->
+        
+        <div class="frame-a mrgn-tb-10r">
+            <h2>Selección semanal del editor</h2>
+            <p class="title-description">Cada semana, nuestros editores seleccionan el mejor contenido para ti.</p>
+            <section class="three-tutorials-grid">
+                <div class="tutorial-card-grid">
+                    <img src="imgs/tutorials-thumbnails/t4.jpg" alt="Robot Pepper con la mirada hacia arriba">
+                    <div>
+                        <p class="tutorial-metadata">Fecha / Categoría</p>
+                        <h3>Título del tutorial</h3>
+                        <p class="justify-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nobis vitae repellendus, excepturi repudiandae esse, laudantium aspernatur eligendi impedit consequuntur tenetur quisquam enim hic at cumque praesentium... <span class="dark-see-more">Leer</span></p>
+                    </div>
+                </div>
+                <div class="tutorial-card-grid">
+                    <img src="imgs/tutorials-thumbnails/t5.jpg" alt="Persona utilizando lentes de Realidad Virtual">
+                    <div>
+                        <p class="tutorial-metadata">Fecha / Categoría</p>
+                        <h3>Título del tutorial</h3>
+                        <p class="justify-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nobis vitae repellendus, excepturi repudiandae esse, laudantium aspernatur eligendi impedit consequuntur tenetur quisquam enim hic at cumque praesentium... <span class="dark-see-more">Leer</span></p>
+                    </div>
+                </div>
+                <div class="tutorial-card-grid">
+                    <img src="imgs/tutorials-thumbnails/t6.jpg" alt="Persona con un control de Play Station en la mano">
+                    <div>
+                        <p class="tutorial-metadata">Fecha / Categoría</p>
+                        <h3>Título del tutorial</h3>
+                        <p class="justify-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nobis vitae repellendus, excepturi repudiandae esse, laudantium aspernatur eligendi impedit consequuntur tenetur quisquam enim hic at cumque praesentium... <span class="dark-see-more">Leer</span></p>
+                    </div>
+                </div>
+            </section> <!-- three-tutorials-grid --> 
+        </div> <!-- frame-a -->
+        
+        <div class="frame-a mrgn-tb-10r">
+            <h2>Todos los tutoriales de Keyspace</h2>
+            <p class="title-description">Obtén más información sobre teclados mecánicos, tipos de interruptores, diferencias entre los tipos de teclados, temas de tecnología en general y mucho más con nuestros últimos lanzamientos.</p>
+            <div class="tutorial-list-grid">
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+                <div class="tutorial-list-item">
+                    <div class="tutorial-title"><h3>Título del tutorial</h3><span>Categoría</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id magni eius nihil cumque facere numquam reiciendis harum dolores odio? Voluptas optio, laudantium totam sapiente expedita, molestias facilis officiis, exercitationem quisquam magnam similique alias nisi quis. Alias sed quibusdam quasi... <span class="dark-see-more">Ver más</span></p>
+                    <div class="tutorial-data-grid">
+                        <div class="tutorial-data-format"><i class="far fa-eye"></i><span>158</span></div>
+                        <div class="tutorial-data-format"><i class="far fa-comment-alt"></i><span>70</span></div>
+                        <span>Dic 03, 2021 &#8226; Por Daniel Chavarin</span>
+                    </div>
+                </div>
+            </div> <!-- tutorial-list-grid -->
+            <div class="pagination">
+                <div>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span class="dots">...</span>
+                    <span>53</span>
+                    <span>Siguiente &#62;</span>
+                </div>
+            </div>
+        </div> <!-- frame-a -->
+
+        <div class="frame-a">
+            <h2 id="tech-cats">Todas las categorías</h2>
+            <div class="cat-list-grid">
+                <div>
+                    <span>Todo sobre teclados mecánicos</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Robótica</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Inteligencia Artificial</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Ciencia de Datos</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Desarrollo Web</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Marketing Digital</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Desarrollo de Software</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Redes & Telecomunicaciones</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Herramientas Digitales</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Videojuegos</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Diseño</span><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <span>Otros</span><i class="fas fa-chevron-right"></i>
+                </div>
+            </div> <!-- cat-list-grid -->
+        </div> <!-- frame-a -->
+    </main>
+
+    <footer>
+        <p class="open-modal open-footer bg-img"><i class="far fa-hand-point-up fa-3x"></i></p>
+        <div class="modal-display-control modal-bg">
+            <div class="modal-footer bg-img">
+                <div class="transparency-modal-footer">
+                    <div class="footer-grid frame-a">
+                        <div>
+                            <h3>Todos los tamaños</h3>
+                            <a href="catalog.html">1800-Compact (90%)</a>
+                            <a href="catalog.html">TKL TenKeyLess (80%)</a>
+                            <a href="catalog.html">TKL-Compact (70%)</a>
+                            <a href="catalog.html">TK-FnBar-Arrows-Less (60%)</a>
+                            <a href="catalog.html">TK-FnBar-Arrows-NumBar-Less (40%)</a>
+                        </div>
+                        <div>
+                            <h3>Soporte</h3>
+                            <a href="support.html">Preguntas frecuentes</a>
+                            <a href="support.html">Chat en línea</a>
+                            <a href="support.html">Firmware</a>
+                            <a href="learn.html">Tutoriales</a>
+                        </div>
+                        <div>
+                            <h3>Empresa</h3>
+                            <a href="about.html">Conoce más sobre Keyspace</a>
+                            <a href="about.html">Contactar</a>
+                            <a href="#">Carreras</a>
+                            <a href="#">Política de Privacidad</a>
+                            <a href="#">Términos del Servicio</a>
+                        </div>
+                        <span class="close-modal close-modal-footer">&times;</span>
+                    </div> <!-- footer-grid -->
+                    <p class="design-data">Noviembre 2021 / Daniel Chavarin</p>
+                </div> <!-- transparency-modal-footer -->
+            </div> <!-- modal-footer -->
+        </div> <!-- modal-bg -->
+    </footer>
+
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/navbar-style.js"></script>
+    <script src="js/modal-windows.js"></script>
+    <script>
+        // bg-img update
+        var bg_img = document.getElementsByClassName("bg-img");
+        for (let i = 0; i < bg_img.length; i++){
+            bg_img[i].style.backgroundImage = "url(imgs/bg-img/learn-bg-img.jpg)";
+        }
+    </script>
+
+</body>
+</html>
+

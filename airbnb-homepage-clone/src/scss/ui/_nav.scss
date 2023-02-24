@@ -1,0 +1,63 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.nav {
+  @include m.tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  @include m.desktop {
+    flex-direction: row;
+  }
+  &__logo-contenedor {
+    background-color: v.$blanco;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 0 auto;
+    @include m.tablet {
+      margin: 0;
+    }
+  }
+  &__logo {
+    width: 10rem;
+    height: auto;
+  }
+  &__links {
+    display: none;
+    @include m.tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+    @include m.desktop {
+      flex-direction: row;
+    }
+  }
+  &__link {
+    color: v.$blanco;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: inset 0 -9px 0 0 v.$secundario;
+    &:hover {
+      box-shadow: inset 0 -9px 0 0 v.$primario;
+    }
+    &--boton {
+      box-shadow: none;
+      &:hover {
+        box-shadow: none;
+      }
+      display: none;
+      @include m.tablet {
+        display: block;
+        @include m.boton(v.$grisClaro, v.$secundario);
+        margin-top: 0;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

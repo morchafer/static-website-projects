@@ -1,0 +1,72 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.anfitrion {
+  margin: 5rem auto;
+  @include m.tablet {
+    margin: 5rem auto 0;
+  }
+  max-width: 38rem;
+  height: 70rem;
+  background-image: url(../img/anfitrion.jpg);
+  background-position: -40rem;
+  background-repeat: no-repeat;
+  @include m.tablet {
+    @include m.grid(2, 0);
+    padding: 5rem;
+    height: 45rem;
+    max-width: 120rem;
+    background-image: linear-gradient(
+        to right,
+        v.$secundario 0%,
+        v.$secundario 40%,
+        transparent 60%
+      ),
+      url(../img/anfitrion.jpg);
+    background-position: left, -2rem;
+  }
+  @include m.desktop {
+    background-position: left, 16rem;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(
+      to top,
+      v.$secundario 0%,
+      v.$secundario 40%,
+      transparent 55%
+    );
+    height: 75rem;
+    padding: 2rem;
+    @include m.tablet {
+      background-image: unset;
+      height: unset;
+      justify-content: center;
+      padding: unset;
+    }
+  }
+  &__heading {
+    color: v.$blanco;
+    text-align: center;
+    line-height: 1.2;
+    @include m.tablet {
+      text-align: left;
+    }
+  }
+  &__info {
+    color: v.$blanco;
+    margin: 3rem 0;
+    line-height: 1.5;
+  }
+  &__boton {
+    @include m.boton(v.$grisClaro, v.$secundario);
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    @include m.tablet {
+      width: fit-content;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.header {
+  margin-block: 5rem;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: calc(v.$tablet + 100px)) {
+      flex-direction: row;
+    }
+  }
+  &__logo {
+    max-width: 30rem;
+  }
+}
+
+.hero {
+  margin-top: 5rem;
+  &__top,
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    .hero__box {
+      &--contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+        border-block: 1px solid v.$blanco;
+        padding-block: 3rem;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40rem;
+        @include m.tablet {
+          width: 50%;
+        }
+      }
+      &:nth-child(2) {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  &__top {
+    @include m.tablet {
+      flex-direction: row;
+    }
+    .hero__box {
+      &:nth-child(1) {
+        background-color: v.$primario;
+      }
+      &:nth-child(2) {
+        background-image: url(../img/bloque_1.jpg);
+      }
+    }
+  }
+  &__bottom {
+    @include m.tablet {
+      flex-direction: row-reverse;
+    }
+    .hero__box {
+      &:nth-child(1) {
+        background-color: v.$secundario;
+      }
+      &:nth-child(2) {
+        background-image: url(../img/bloque_2.jpg);
+      }
+    }
+  }
+  &__heading,
+  &__texto {
+    color: v.$blanco;
+    text-align: center;
+    margin: 0;
+  }
+  &__heading {
+    text-transform: uppercase;
+  }
+  &__texto {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}

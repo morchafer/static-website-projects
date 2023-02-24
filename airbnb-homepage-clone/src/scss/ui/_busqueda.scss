@@ -1,0 +1,64 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.busqueda {
+  margin: 5rem auto 0;
+  max-width: 90rem;
+  @include m.desktop {
+    margin: 10rem auto 0;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$blanco;
+    border-radius: 5rem;
+    box-shadow: 0 3px 7px 0px v.$gris;
+    flex-direction: column;
+    padding: 2rem;
+    @include m.desktop {
+      padding: 0;
+      flex-direction: row;
+    }
+  }
+  &__campo {
+    width: 100%;
+    padding: 1rem 2rem;
+    &:first-child {
+      @include m.desktop {
+        padding: 1rem 2rem 1rem 3rem;
+      }
+    }
+    &:hover {
+      background-color: v.$grisClaro;
+      border-radius: 5rem;
+      box-shadow: 0 3px 7px 0px v.$gris;
+    }
+  }
+  &__label {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+  &__input {
+    border: none;
+    color: v.$gris;
+    width: 100%;
+    border-radius: 5rem;
+    &:focus {
+      background-color: v.$grisClaro;
+    }
+  }
+  &__submit {
+    @include m.boton(v.$secundario, v.$blanco);
+    border: none;
+    margin: 0 2px 0 0;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    width: 100%;
+    &:hover {
+      background-color: v.$primario;
+    }
+  }
+}

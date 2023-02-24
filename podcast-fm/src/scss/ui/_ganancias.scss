@@ -1,0 +1,36 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.ganancias {
+  background-color: v.$primario;
+  padding: 8rem 1rem;
+  &__contenido {
+    display: flex;
+    flex-direction: column;
+    @include m.tablet {
+      @include m.grid(5, 4rem);
+      align-items: center;
+    }
+  }
+  &__heading {
+    @include m.heading(v.$secundario, v.$blanco);
+  }
+  &__texto {
+    @include m.tablet {
+      grid-column: 1 / 4;
+    }
+  }
+  &__imagen-contenedor {
+    @include m.tablet {
+      grid-column: 4 / 6;
+    }
+  }
+  &__imagen {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    &:hover {
+      transform: rotate(6deg) scale(1.1);
+    }
+  }
+}

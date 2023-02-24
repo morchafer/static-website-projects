@@ -1,0 +1,10 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.estadisticas {
+  padding: 8rem 1rem;
+  &__heading {
+    @include m.heading(v.$secundario, v.$primario);
+    margin-bottom: 4rem;
+  }
+}

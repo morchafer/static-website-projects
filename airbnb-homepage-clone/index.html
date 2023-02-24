@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb - Vacation Homes & Condo Rentals</title>
+    <link
+      rel="shortcut icon"
+      href="./build/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__contenido contenedor">
+        <div class="nav">
+          <div class="nav__logo-contenedor">
+            <img class="nav__logo" src="build/img/logo.png" alt="Logo" />
+          </div>
+          <nav class="nav__links">
+            <a class="nav__link" href="#">Lugares para hospedarte</a>
+            <a class="nav__link" href="#">Experiencias</a>
+            <a class="nav__link" href="#">Experiencias en línea</a>
+          </nav>
+          <a class="nav__link nav__link--boton" href="#">Hazte Anfitrión</a>
+        </div>
+        <div class="busqueda">
+          <form class="busqueda__form">
+            <div class="busqueda__campo">
+              <label class="busqueda__label" for="ubicacion">Ubicación</label>
+              <input
+                class="busqueda__input"
+                id="ubicacion"
+                type="text"
+                placeholder="¿A dónde viajas?"
+              />
+            </div>
+            <div class="busqueda__campo">
+              <label class="busqueda__label" for="llegada">Llegada</label>
+              <input class="busqueda__input" id="llegada" type="date" />
+            </div>
+            <div class="busqueda__campo">
+              <label class="busqueda__label" for="salida">Salida</label>
+              <input class="busqueda__input" id="salida" type="date" />
+            </div>
+            <div class="busqueda__campo">
+              <label class="busqueda__label" for="huespedes">Huéspedes</label>
+              <input
+                class="busqueda__input"
+                placeholder="¿Cuántos?"
+                id="huespedes"
+                type="number"
+                min="1"
+              />
+            </div>
+            <input class="busqueda__submit" type="submit" value="Buscar" />
+          </form>
+        </div>
+        <div class="header__widget">
+          <p class="header__texto">¿No sabes a dónde ir?</p>
+          <a class="header__boton" href="#">Búsqueda Flexible</a>
+        </div>
+      </div>
+      <!-- .header__contenido -->
+    </header>
+    <!-- .header -->
+
+    <section class="populares contenedor">
+      <h2 class="populares__heading">Descubre alojamientos populares</h2>
+      <div class="populares__grid">
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_1.png"
+              alt="New York"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">New York</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_2.png"
+              alt="París"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">París</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_3.png"
+              alt="San Francisco"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">San Francisco</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_4.png"
+              alt="Egipto"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">Egipto</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_5.png"
+              alt="Londres"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">Londres</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_6.png"
+              alt="Italia"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">Italia</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_7.png"
+              alt="India"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">India</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+        <div class="populares__card">
+          <div class="populares__imagen-contenedor">
+            <img
+              class="populares__imagen"
+              src="build/img/icono_destino_8.png"
+              alt="Grecia"
+            />
+          </div>
+          <div class="populares__texto">
+            <h3 class="populares__destino">Grecia</h3>
+            <p class="populares__info">4 horas en avión</p>
+          </div>
+        </div>
+        <!-- .populares__card -->
+      </div>
+      <!-- .populares__grid -->
+    </section>
+    <!-- .populares -->
+
+    <section class="alojamientos contenedor">
+      <h2 class="alojamientos__heading">Vive en cualquier lugar del mundo</h2>
+      <div class="alojamientos__grid">
+        <div class="alojamientos__card">
+          <img
+            class="alojamientos__imagen"
+            src="build/img/vive_1.jpg"
+            alt="Escapadas al aire libre"
+          />
+          <p class="alojamientos__texto">Escapadas al aire libre</p>
+        </div>
+        <div class="alojamientos__card">
+          <img
+            class="alojamientos__imagen"
+            src="build/img/vive_2.jpg"
+            alt="Alojamientos únicos"
+          />
+          <p class="alojamientos__texto">Alojamientos únicos</p>
+        </div>
+        <div class="alojamientos__card">
+          <img
+            class="alojamientos__imagen"
+            src="build/img/vive_3.jpg"
+            alt="Alojamientos enteros"
+          />
+          <p class="alojamientos__texto">Alojamientos enteros</p>
+        </div>
+        <div class="alojamientos__card">
+          <img
+            class="alojamientos__imagen"
+            src="build/img/vive_4.jpg"
+            alt="Con tu mascota"
+          />
+          <p class="alojamientos__texto">Con tu mascota</p>
+        </div>
+      </div>
+      <!-- .alojamientos__grid -->
+    </section>
+    <!-- .alojamientos -->
+
+    <section class="anfitrion contenedor">
+      <div class="anfitrion__box">
+        <h2 class="anfitrion__heading">Anímate a ser anfitrión</h2>
+        <p class="anfitrion__info">
+          Comparte tu espacio para ganar dinero extra y aprovechar nuevas
+          oportunidades
+        </p>
+        <a class="anfitrion__boton" href="#">Más información</a>
+      </div>
+    </section>
+
+    <section class="experiencias contenedor">
+      <h2 class="experiencias__heading">Descubre Experiencias</h2>
+      <p class="experiencias__texto">
+        Actividades únicas con expertos locales, en persona o en línea
+      </p>
+      <div class="experiencias__grid">
+        <div class="experiencias__card">
+          <img
+            class="experiencias__imagen"
+            src="build/img/experiencia_1.jpg"
+            alt="Experiencias"
+          />
+          <p class="experiencias__info">Experiencias</p>
+          <p class="experiencias__info--texto">
+            Actividades locales estés donde estés
+          </p>
+        </div>
+        <div class="experiencias__card">
+          <img
+            class="experiencias__imagen"
+            src="build/img/experiencia_2.jpg"
+            alt="Experiencias"
+          />
+          <p class="experiencias__info">Experiencias</p>
+          <p class="experiencias__info--texto">
+            Visita una ciudad y vive en ella
+          </p>
+        </div>
+        <div class="experiencias__card">
+          <img
+            class="experiencias__imagen"
+            src="build/img/experiencia_3.jpg"
+            alt="Experiencias"
+          />
+          <p class="experiencias__info">Experiencias en línea</p>
+          <p class="experiencias__info--texto">
+            Actividades interactivas en vivo
+          </p>
+        </div>
+      </div>
+      <!-- .experiencias__grid -->
+    </section>
+    <!-- .experiencias -->
+
+    <footer class="footer">
+      <div class="footer__contenido contenedor">
+        <div class="footer__bar">
+          <div class="footer__bar-left">
+            <span class="footer__name">© 2022 Airbnb, Inc.</span>
+            <span class="footer__left-sep"> · </span>
+            <a class="footer__left-item" href="#">Privacidad</a>
+            <span class="footer__left-sep"> · </span>
+            <a class="footer__left-item" href="#">Términos</a>
+            <span class="footer__left-sep"> · </span>
+            <a class="footer__left-item" href="#">Mapa del sitio</a>
+            <span class="footer__left-sep"> · </span>
+            <a class="footer__left-item" href="#">Información de la compañía</a>
+          </div>
+          <div class="footer__bar-right">
+            <span class="footer__right-item">Español (MX)</span>
+            <span class="footer__right-item">$ MXN</span>
+            <span class="footer__right-item">Ayuda y recursos</span>
+          </div>
+        </div>
+        <div class="footer__modal">
+          <div class="footer__modal-box footer__modal-box--scroll">
+            <div class="footer__modal-contenido footer__modal-contenido">
+              <div class="footer__box-item">
+                <h3 class="footer__heading">Asistencia</h3>
+                <nav class="footer__nav">
+                  <a class="footer__link" href="#">Centro de Ayuda</a>
+                  <a class="footer__link" href="#">AirCover</a>
+                  <a class="footer__link" href="#">Accesibilidad para todos</a>
+                  <a class="footer__link" href="#">Opciones de cancelación</a>
+                  <a class="footer__link" href="#"
+                    >Nuestra respuesta ante el COVID-19</a
+                  >
+                  <a class="footer__link" href="#">¿Problemas en tu colonia?</a>
+                </nav>
+              </div>
+              <div class="footer__box-item">
+                <h3 class="footer__heading">Comunidad</h3>
+                <nav class="footer__nav">
+                  <a class="footer__link" href="#"
+                    >Airbnb.org para emergencias
+                  </a>
+                  <a class="footer__link" href="#"
+                    >Lucha contra la discriminación</a
+                  >
+                </nav>
+              </div>
+              <div class="footer__box-item">
+                <h3 class="footer__heading">Cómo ser anfitrión</h3>
+                <nav class="footer__nav">
+                  <a class="footer__link" href="#">Hazlo AirBnB</a>
+                  <a class="footer__link" href="#">AirCover para anfitriones</a>
+                  <a class="footer__link" href="#">Recursos para anfitriones</a>
+                  <a class="footer__link" href="#"
+                    >Visita el foro de la comunidad</a
+                  >
+                  <a class="footer__link" href="#"
+                    >Ser un anfitrión responsable</a
+                  >
+                </nav>
+              </div>
+              <div class="footer__box-item">
+                <h3 class="footer__heading">AirBnB</h3>
+                <nav class="footer__nav">
+                  <a class="footer__link" href="#">Sala de prensa</a>
+                  <a class="footer__link" href="#"
+                    >Descubre las nuevas funciones</a
+                  >
+                  <a class="footer__link" href="#">Carta de los fundadores</a>
+                  <a class="footer__link" href="#">Empleo</a>
+                  <a class="footer__link" href="#">Inversores</a>
+                </nav>
+              </div>
+            </div>
+            <!-- .footer__modal-contenido -->
+          </div>
+          <!-- .footer__modal-box -->
+        </div>
+        <!-- .footer__modal -->
+      </div>
+      <!-- .footer__contenido -->
+    </footer>
+    <!-- .footer -->
+
+    <script src="js/footerControl.js"></script>
+  </body>
+</html>

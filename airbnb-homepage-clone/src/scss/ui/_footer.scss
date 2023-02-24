@@ -1,0 +1,105 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer {
+  margin-top: 5rem;
+  padding: 3rem 0;
+  background-color: v.$grisClaro;
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    @include m.telefono {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 5rem;
+    }
+    @include m.tabletPlus {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    @include m.desktopPlus {
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+  &__bar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include m.telefono {
+      gap: 1rem;
+    }
+    @include m.tabletPlus {
+      flex-direction: row;
+    }
+  }
+  &__bar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include m.tabletPlus {
+      flex-direction: row;
+    }
+  }
+  &__name {
+    border-bottom: 1px solid v.$negro;
+    padding-bottom: 2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    @include m.telefono {
+      all: unset;
+    }
+  }
+  &__left-sep {
+    display: none;
+    @include m.tabletPlus {
+      display: block;
+    }
+  }
+  &__left-item,
+  &__right-item {
+    color: v.$negro;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  &__right-item {
+    &:first-of-type {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        background-image: url(../img/web.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -9px;
+        left: -43px;
+      }
+    }
+    &:last-of-type {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+        background-image: url(../img/flecha_arriba.png);
+        background-repeat: no-repeat;
+        background-size: 1.6rem;
+        position: absolute;
+        top: 0px;
+        right: -24px;
+      }
+    }
+  }
+}

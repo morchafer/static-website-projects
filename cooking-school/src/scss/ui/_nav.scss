@@ -1,0 +1,18 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  @media (min-width: calc(v.$tablet + 100px)) {
+    flex-direction: row;
+  }
+  &__link {
+    font-size: 2.4rem;
+    &:hover {
+      color: v.$primario;
+    }
+  }
+}
